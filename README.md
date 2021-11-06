@@ -4,7 +4,7 @@ This is a little description about your project.
 
 **Tech Stack:** MongoDB, Express.js, React.js, Node.js, Typescript
 
-**Contributors**: [Jun Hwang](https://github.com/hwangs12) (replace)
+**Contributors**: [Jun Hwang](https://github.com/hwangs12)
 
 ---
 
