@@ -69,10 +69,11 @@ const SignUpForm = ({ handleSubmit }: Props): JSX.Element => {
             error={touched.username && Boolean(errors.username)}
             value={values.username}
             onChange={handleChange}
+            placeholder="Your Username"
           />
           <TextField
             id="email"
-            label={<Typography className={classes.label}>E-mail address</Typography>}
+            label={<Typography className={classes.label}>Email address</Typography>}
             fullWidth
             margin="normal"
             InputLabelProps={{
@@ -87,6 +88,7 @@ const SignUpForm = ({ handleSubmit }: Props): JSX.Element => {
             error={touched.email && Boolean(errors.email)}
             value={values.email}
             onChange={handleChange}
+            placeholder="Your email"
           />
           <TextField
             id="password"
@@ -105,6 +107,7 @@ const SignUpForm = ({ handleSubmit }: Props): JSX.Element => {
             error={touched.password && Boolean(errors.password)}
             value={values.password}
             onChange={handleChange}
+            placeholder="Create a password"
           />
 
           <Box textAlign="center">

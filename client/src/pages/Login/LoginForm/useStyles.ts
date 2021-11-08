@@ -6,9 +6,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
   },
   label: {
-    fontSize: 19,
-    color: 'rgb(0,0,0,0.4)',
+    fontSize: 15,
+    color: 'rgb(0,0,0,1)',
     paddingLeft: '5px',
+    fontWeight: 700,
+    textTransform: 'uppercase',
   },
   inputs: {
     marginTop: '.8rem',
@@ -17,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   forgot: {
     paddingRight: 10,
-    color: '#3a8dff',
+    color: '#FF5733',
   },
   submit: {
     margin: theme.spacing(3, 2, 2),
@@ -27,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: theme.shape.borderRadius,
     marginTop: 49,
     fontSize: 16,
-    backgroundColor: '#3a8dff',
+    backgroundColor: '#FF5733',
     fontWeight: 'bold',
   },
 }));
