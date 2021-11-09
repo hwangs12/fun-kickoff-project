@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   forgot: {
     paddingRight: 10,
-    color: '#FF5733',
+    color: '#f14140',
   },
   submit: {
     margin: theme.spacing(3, 2, 2),
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: theme.shape.borderRadius,
     marginTop: 49,
     fontSize: 16,
-    backgroundColor: '#FF5733',
+    backgroundColor: '#f14140',
     fontWeight: 'bold',
   },
 }));
