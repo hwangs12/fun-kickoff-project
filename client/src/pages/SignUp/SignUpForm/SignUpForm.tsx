@@ -52,26 +52,6 @@ const SignUpForm = ({ handleSubmit }: Props): JSX.Element => {
       {({ handleSubmit, handleChange, values, touched, errors, isSubmitting }) => (
         <form onSubmit={handleSubmit} className={classes.form} noValidate>
           <TextField
-            id="username"
-            label={<Typography className={classes.label}>Username</Typography>}
-            fullWidth
-            margin="normal"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            InputProps={{
-              classes: { input: classes.inputs },
-            }}
-            name="username"
-            autoComplete="username"
-            autoFocus
-            helperText={touched.username ? errors.username : ''}
-            error={touched.username && Boolean(errors.username)}
-            value={values.username}
-            onChange={handleChange}
-            placeholder="Your Username"
-          />
-          <TextField
             id="email"
             label={<Typography className={classes.label}>Email address</Typography>}
             fullWidth
@@ -81,6 +61,7 @@ const SignUpForm = ({ handleSubmit }: Props): JSX.Element => {
             }}
             InputProps={{
               classes: { input: classes.inputs },
+              disableUnderline: true,
             }}
             name="email"
             autoComplete="email"
@@ -89,6 +70,27 @@ const SignUpForm = ({ handleSubmit }: Props): JSX.Element => {
             value={values.email}
             onChange={handleChange}
             placeholder="Your email"
+          />
+          <TextField
+            id="username"
+            label={<Typography className={classes.label}>name</Typography>}
+            fullWidth
+            margin="normal"
+            InputLabelProps={{
+              shrink: true,
+            }}
+            InputProps={{
+              classes: { input: classes.inputs },
+              disableUnderline: true,
+            }}
+            name="username"
+            autoComplete="username"
+            autoFocus
+            helperText={touched.username ? errors.username : ''}
+            error={touched.username && Boolean(errors.username)}
+            value={values.username}
+            onChange={handleChange}
+            placeholder="Your name"
           />
           <TextField
             id="password"
@@ -100,6 +102,7 @@ const SignUpForm = ({ handleSubmit }: Props): JSX.Element => {
             }}
             InputProps={{
               classes: { input: classes.inputs },
+              disableUnderline: true,
             }}
             type="password"
             autoComplete="current-password"
@@ -112,7 +115,7 @@ const SignUpForm = ({ handleSubmit }: Props): JSX.Element => {
 
           <Box textAlign="center">
             <Button type="submit" size="large" variant="contained" color="primary" className={classes.submit}>
-              {isSubmitting ? <CircularProgress style={{ color: 'white' }} /> : 'Create'}
+              {isSubmitting ? <CircularProgress style={{ color: 'white' }} /> : 'SIGN UP'}
             </Button>
           </Box>
         </form>

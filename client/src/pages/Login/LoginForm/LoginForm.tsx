@@ -56,6 +56,7 @@ export default function Login({ handleSubmit }: Props): JSX.Element {
             }}
             InputProps={{
               classes: { input: classes.inputs },
+              disableUnderline: true,
             }}
             name="email"
             autoComplete="email"
@@ -76,7 +77,8 @@ export default function Login({ handleSubmit }: Props): JSX.Element {
             }}
             InputProps={{
               classes: { input: classes.inputs },
-              endAdornment: <Typography className={classes.forgot}>Forgot?</Typography>,
+              disableUnderline: true,
+              // endAdornment: <Typography className={classes.forgot}>Forgot?</Typography>,
             }}
             type="password"
             autoComplete="current-password"

@@ -2,15 +2,24 @@ import { createMuiTheme } from '@material-ui/core';
 
 export const theme = createMuiTheme({
   typography: {
-    fontFamily: '"Open Sans", "sans-serif", "Roboto"',
+    fontFamily: '"Roboto, "Open Sans", "sans-serif"',
     fontSize: 12,
     button: {
       textTransform: 'none',
-      fontWeight: 700,
+      fontWeight: 300,
+      backgroundColor: '#f14140',
     },
   },
   palette: {
-    primary: { main: '#3A8DFF' },
+    primary: {
+      main: '#f14140',
+    },
+    secondary: {
+      main: '#ffffff',
+    },
+    text: {
+      secondary: '#fafafa',
+    },
   },
   shape: {
     borderRadius: 5,

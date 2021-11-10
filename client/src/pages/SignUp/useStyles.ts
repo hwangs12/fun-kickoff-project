@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
     '& .MuiInput-underline:before': {
@@ -14,14 +14,28 @@ const useStyles = makeStyles(() => ({
     flexDirection: 'column',
     minHeight: '100vh',
     paddingTop: 23,
+    backgroundColor: theme.palette.text.secondary,
   },
   welcome: {
     fontSize: 26,
     paddingBottom: 20,
     color: '#000000',
     fontWeight: 700,
-    fontFamily: "'Roboto'",
+    fontFamily: theme.typography.fontFamily,
     textAlign: 'center',
+  },
+  form: {
+    backgroundColor: theme.palette.secondary.main,
+    paddingLeft: 100,
+    paddingRight: 100,
+  },
+  link: {
+    color: theme.palette.primary.main,
+  },
+  member: {
+    fontWeight: 500,
+    textAlign: 'center',
+    marginTop: 35,
   },
 }));
 
