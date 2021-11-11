@@ -34,9 +34,10 @@ const useStyles = makeStyles((theme) => ({
     height: 56,
     borderRadius: theme.shape.borderRadius,
     marginTop: 35,
-    fontSize: 14,
+    fontSize: 16,
     backgroundColor: theme.typography.button.backgroundColor,
     fontWeight: theme.typography.button.fontWeight,
+    textTransform: 'capitalize',
   },
 }));
 

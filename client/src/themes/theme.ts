@@ -6,7 +6,7 @@ export const theme = createMuiTheme({
     fontSize: 12,
     button: {
       textTransform: 'none',
-      fontWeight: 300,
+      fontWeight: 500,
       backgroundColor: '#f14140',
     },
   },

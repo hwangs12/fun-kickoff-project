@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     backgroundColor: theme.typography.button.backgroundColor,
     fontWeight: 'bold',
+    textTransform: 'capitalize',
   },
 }));
 
