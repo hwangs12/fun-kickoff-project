@@ -10,6 +10,7 @@ import SignUpForm from './SignUpForm/SignUpForm';
 import AuthHeader from '../../components/AuthHeader/AuthHeader';
 import { useAuth } from '../../context/useAuthContext';
 import { useSnackBar } from '../../context/useSnackbarContext';
+import { Link } from 'react-router-dom';
 
 export default function Register(): JSX.Element {
   const classes = useStyles();
@@ -43,15 +44,33 @@ export default function Register(): JSX.Element {
       <Grid item xs={12} sm={8} md={7} elevation={6} component={Paper} square>
         <Box className={classes.authWrapper}>
           <AuthHeader linkTo="/login" asideText="Already have an account?" btnText="Login" />
-          <Box width="100%" maxWidth={450} p={3} alignSelf="center">
+          <Box
+            width="100%"
+            maxWidth={600}
+            p={3}
+            alignSelf="center"
+            boxShadow={3}
+            borderRadius={5}
+            className={classes.form}
+          >
             <Grid container>
               <Grid item xs>
                 <Typography className={classes.welcome} component="h1" variant="h5">
-                  Create an account
+                  Sign up
                 </Typography>
               </Grid>
             </Grid>
             <SignUpForm handleSubmit={handleSubmit} />
+            <Grid container>
+              <Grid item xs>
+                <Typography className={classes.member}>
+                  Already a member?{' '}
+                  <Link to="/login" className={classes.link}>
+                    Login
+                  </Link>
+                </Typography>
+              </Grid>
+            </Grid>
           </Box>
           <Box p={1} alignSelf="center" />
         </Box>
