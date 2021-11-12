@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   authWrapper: {
     display: 'flex',
     alignItems: 'flex-start',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     flexDirection: 'column',
     minHeight: '100vh',
     paddingTop: 23,
