@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const userProfileSchema = new mongoose.Schema({
-  first_name: {
+  firstName: {
     type: String,
     required: true,
   },
-  late_name: {
+  lateName: {
     type: String,
     required: true,
   },
@@ -21,7 +21,7 @@ const userProfileSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  phone_number: {
+  phoneNumber: {
     type: String,
     required: true
   },
@@ -31,6 +31,10 @@ const userProfileSchema = new mongoose.Schema({
   },
   description: {
     type: String,
+  },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
   }
 });
 
