@@ -20,15 +20,17 @@ export default function ButtonAppBar() {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <img src={logo} alt="logo" />
           </IconButton>
-          <Typography className={classes.member}></Typography>
+
           {loggedInUser ? (
             <>
+              <Typography className={classes.member}></Typography>
               <Button className={classes.buttons}>notifications</Button>
               <Button className={classes.buttons}>my jobs</Button>
               <Button className={classes.buttons}>messages</Button>
             </>
           ) : (
             <>
+              <Typography className={classes.member}>become a member</Typography>
               <Link to="/login" className={`${classes.link} ${classes.linkLogin}`}>
                 log in
               </Link>
